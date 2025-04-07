@@ -3,6 +3,7 @@ import { formatAnimeList } from '../models/animeModel';
 
 // URL de la API de Jikan
 const JIKAN_API_URL = 'https://api.jikan.moe/v4/anime';
+//url de la api
 
 // Función para obtener animes desde la API
 export const getAnimes = async () => {

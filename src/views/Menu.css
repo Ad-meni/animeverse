@@ -11,10 +11,15 @@
     transition: left 0.3s ease; /* Transición suave al abrir/cerrar */
     z-index: 1000;
   }
+  /*Con esto definimos las propiedades visuales de el menu lateral
+  como vemos usamos left -100 para que no se muestre, luego usamos position fixed para
+  que abarque toda la pantalla, ademas de agregar un espaciado entre opciones con padding
+  y luego una transicion suave que se controla con menu.open*/
   
   .menu.open {
     left: 0; /* Aparece el menú en la vista */
   }
+  /*esta clase se agrega cuando el menu esta abierto, cambiando de left -100 a 0 */
   
   .menu-toggle {
     position: fixed;
@@ -25,6 +30,9 @@
     cursor: pointer;
     z-index: 1100;
   }
+  /*es el boton que llamamos hamburger, controla cuando abre y cierra el menu
+  ademas esta fijado a la superior izquierda, tiene fondo transparente y cuando el cursor
+  este encima se pone la manita*/
   
   .menu-toggle .hamburger {
     width: 30px;
@@ -33,10 +41,13 @@
     margin: 5px 0; /* Espaciado entre las líneas */
     transition: transform 0.3s ease, background-color 0.3s ease;
   }
+  /*Representa las lineas de el icono hamburguesa, osea cada opcion que hay dentro de el menu y ademas
+  vemos color y transformacion de color en segundos*/
   
   .menu-toggle:hover .hamburger {
     background-color: #555; /* Cambia de color al pasar el mouse */
   }
+  /*Cambia el color de el fondo de las opciones cuando el mouse este encima */
   
   .menu-list {
     list-style: none;
@@ -53,6 +64,7 @@
   .menu-item:hover {
     color: #e5dcc5; /* Color perla al hacer hover */
   }
+  /*Cambia el color de el texto cuando el mouse este encima a color perla*/
   
   .reset-button {
     background-color: #555;
@@ -64,6 +76,7 @@
     margin-top: 20px;
     width: 100%;
   }
+  /*Boton de reiniciar */
   
   .reset-button:hover {
     background-color: #777;

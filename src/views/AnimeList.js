@@ -155,3 +155,11 @@ const handleExpandCard = (id) => {
   };
   
   export default AnimeList;
+//Esto define el como funciona la logina para mostrar, filtrar y poder decir o gestionar los animes que mostraremos, primero importamos funciones
+// y estilos ademas de datos que usaremos para manejar la api, luego el diseno y las interacciones del usuairo, usamos la const genres para
+// contener los nombres de los generos de el anime para construir el menu de categorias, la const handleexpandcard gestiona la logica de expandir
+// y contraer la vista de un anime, asi se activan clases segun el id del anime, luego el hook useeffect lo usamos para
+// ejecutar codigo cuando el componente se carga o cuando cambia el estado especifico, como filtros o los idiomas, 
+// luego tenemos la funcion asincrona, handletranslate, conecta con la api de traducion para convertir la descripcion de un anime al idioma seleccionado
+// la const togglemenu altera entre arir y cerrar el menu lateral al cambiar de true e false, luego el return, donde el jsx carga los componentes y condicionnales
+// como "?" que usamos para evaluar el estado osea, para saber que clase/id representa esa etiqueta/

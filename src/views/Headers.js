@@ -10,3 +10,4 @@ const Header = () => {
 };
 
 export default Header;
+//estructura para pasar el header junto con la imagen que le corresponde
