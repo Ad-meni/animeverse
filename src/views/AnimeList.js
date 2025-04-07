@@ -97,7 +97,7 @@ const handleExpandCard = (id) => {
         
         {/* Contenido principal con margen dinámico */}
         <div className={`main-content ${menuOpen ? 'menu-open' : ''}`}>
-        <h1 className="title">Encuentra informacion de diferentes tipos</h1>
+        <h1 className="title">Encuentra informacion sobre diferentes tipos de animes</h1>
   
           {/* Traductor */}
           <div className="translation-container">
