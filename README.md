@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+AnimeVerse
+AnimeVerse es una aplicación diseñada para todos los amantes del anime que buscan una manera rápida y sencilla de descubrir qué ver. Ya sea que estés buscando explorar nuevos géneros o simplemente obtener una sinopsis de los animes más destacados, AnimeVerse te ofrece una experiencia interactiva y organizada para que encuentres tu próximo favorito en pocos clics.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+¿Por qué AnimeVerse es útil?
+AnimeVerse está pensada para resolver uno de los problemas más comunes de los aficionados al anime: encontrar una recomendación rápida y precisa. Muchas plataformas contienen información abrumadora o están desorganizadas, lo que hace complicado encontrar exactamente lo que necesitas. Aquí es donde AnimeVerse destaca:
+- Búsqueda organizada por categorías: Filtra animes por géneros (Acción, Comedia, Romance, etc.) para explorar solo los contenidos que más se ajustan a tus gustos.
+- Sinopsis rápidas y precisas: Obtén una descripción concisa de cada anime para decidir fácilmente si es lo que estás buscando.
+- Opciones de traducción: Amplía el alcance del contenido al traducir sinopsis a múltiples idiomas, como inglés, español, francés, alemán y japonés.
+- Interfaz intuitiva: Una página clara y moderna que organiza los animes en cuadros visualmente atractivos, permitiendo una navegación fluida.
+- Ideal para tomar decisiones rápidas: No más tiempo perdido revisando largas listas; aquí encontrarás lo que necesitas en segundos.
 
-## Available Scripts
 
-In the project directory, you can run:
+Características principales
+- Exploración por géneros: Selecciona el género que te interesa desde un menú interactivo, y AnimeVerse te mostrará solo las opciones relacionadas.
+- Traducciones integradas: Facilita el acceso a sinopsis en el idioma que prefieras, lo que lo hace ideal para una audiencia global.
+- Diseño adaptable (responsive): La página se ajusta perfectamente a cualquier dispositivo, ya sea tu computadora, tablet o smartphone.
+- Estética elegante: Colores cálidos, bordes suaves y un diseño limpio hacen que la experiencia sea agradable a la vista.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+¿Para quién está hecho?
+AnimeVerse está diseñado tanto para aficionados que buscan recomendaciones personalizadas como para nuevos espectadores que están empezando a explorar el vasto universo del anime. La combinación de simplicidad, funcionalidad y estética lo hace perfecto para usuarios de cualquier nivel.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+¡AnimeVerse no solo es una herramienta útil, sino también una experiencia visual y funcional que te ayudará a encontrar tu próximo anime favorito de forma sencilla y entretenida!
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Cómo usar AnimeVerse
+- Navega por los géneros: Filtra animes por tus géneros favoritos usando el menú interactivo.
+- Descubre sinopsis: Haz clic en un anime para leer más sobre él, y expande la descripción completa si lo deseas.
+- Traduce las sinopsis: Usa el filtro de idioma para cambiar el texto al idioma que prefieras.
+- Explora y disfruta: Encuentra los animes perfectos para ti y sumérgete en nuevas historias.

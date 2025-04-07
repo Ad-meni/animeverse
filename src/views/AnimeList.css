@@ -1,0 +1,128 @@
+.anime-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Siempre muestra 4 columnas por fila */
+    gap: 20px; /* Espaciado entre los cuadros */
+    justify-content: center; /* Centra las columnas */
+    padding: 20px;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .anime-grid {
+      grid-template-columns: repeat(2, 1fr); /* En pantallas pequeñas, muestra 2 columnas */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .anime-grid {
+      grid-template-columns: 1fr; /* En móviles, muestra 1 columna */
+    }
+  }
+  
+  .anime-card {
+    background-color: #e5dcc5; /* Fondo perla */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición al hover */
+    overflow: hidden;
+    padding: 10px;
+    position: relative; /* Necesario para el botón */
+    width: auto; /* Ajusta el ancho automáticamente */
+    height: 300px; /* Hace los cuadros más largos */
+  }
+  
+  .anime-card:hover {
+    transform: scale(1.05); /* Se agranda un poco */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Sombra más prominente */
+  }
+  
+  
+  .anime-card.expanded {
+    transform: scale(1.1); /* Se agranda más cuando está expandido */
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.3); /* Sombra más fuerte */
+  }
+  
+  .anime-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Ajusta la imagen al cuadro sin deformarla */
+  }
+  
+  .anime-title {
+    font-family: 'Sawarabi Gothic', sans-serif; /* Fuente japonesa */
+    font-size: 18px;
+    margin: 10px;
+    text-align: center;
+    color: #333; /* Color del texto */
+  }
+  
+  .anime-synopsis {
+    font-family: 'Sawarabi Gothic', sans-serif;
+    font-size: 14px;
+    margin: 10px;
+    text-align: justify;
+    color: #555;
+  }
+  
+  .expand-button {
+    position: absolute; /* Coloca el botón dentro del cuadro */
+    bottom: 10px;
+    right: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .expand-button:hover {
+    background-color: #555; /* Cambia el color del botón al hacer hover */
+  }
+
+  .title {
+    font-family: 'Sawarabi Gothic', sans-serif; /* Fuente japonesa */
+    font-size: 28px; /* Tamaño más pequeño */
+    color: #333; /* Color oscuro para contraste */
+    text-align: center; /* Centrado horizontal */
+    margin: 15px 0; /* Espacio superior e inferior más reducido */
+  }
+
+  .translation-container {
+    display: flex; /* Cambia flex para organizar elementos */
+    flex-direction: column; /* Ahora se alinean verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    gap: 10px; /* Espaciado entre el selector y el botón */
+    margin: 20px 0; /* Espacio alrededor del contenedor */
+  }
+  
+  .language-select {
+    font-family: 'Sawarabi Gothic', sans-serif;
+    padding: 5px 10px;
+    border: 1px solid #333; /* Borde para visibilidad */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #e5dcc5; /* Fondo perla */
+    color: #333; /* Texto oscuro */
+  }
+  
+  .translate-button {
+    font-family: 'Sawarabi Gothic', sans-serif;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .translate-button:hover {
+    background-color: #555; /* Cambia de color al hacer hover */
+  }
+
+  body {
+    background-color: #e5dcc5; /* Fondo perla */
+    margin: 0; /* Elimina márgenes por defecto */
+    font-family: 'Sawarabi Gothic', sans-serif; /* Fuente global */
+  }
