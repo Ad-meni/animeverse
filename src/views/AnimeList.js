@@ -5,6 +5,8 @@ import { translateText } from '../services/translateService';
 import Menu from './Menu'; // Importa el menú lateral interactivo
 import './AnimeList.css';
 
+//esta constante sera para la lista de animes, con esto editaremos lo que se muestra y 
+// como lo muestra/
 const AnimeList = () => {
     const [animes, setAnimes] = useState([]);
     const [filteredAnimes, setFilteredAnimes] = useState([]);
@@ -126,25 +128,25 @@ const handleExpandCard = (id) => {
           <div className="anime-grid">
             {filteredAnimes.map((anime) => (
               <div
-                className={`anime-card ${expandedCard === anime.id ? 'expanded' : ''}`}
-                key={anime.id}
+              className={`anime-card ${expandedCard === anime.id ? 'expanded' : ''}`}
+              key={anime.id}
+            >
+              <img src={anime.image} alt={anime.title} className="anime-image" />
+              <h3 className="anime-title">{anime.title}</h3>
+              <p className="anime-synopsis">
+                {expandedCard === anime.id
+                  ? anime.synopsis
+                  : anime.synopsis.length > 100
+                  ? `${anime.synopsis.slice(0, 100)}...`
+                  : anime.synopsis}
+              </p>
+              <button
+                className="expand-button"
+                onClick={() => handleExpandCard(anime.id)}
               >
-                <img src={anime.image} alt={anime.title} className="anime-image" />
-                <h3 className="anime-title">{anime.title}</h3>
-                <p className="anime-synopsis">
-                  {expandedCard === anime.id
-                    ? anime.synopsis
-                    : anime.synopsis.length > 100
-                    ? `${anime.synopsis.slice(0, 100)}...`
-                    : anime.synopsis}
-                </p>
-                <button
-                  className="expand-button"
-                  onClick={() => handleExpandCard(anime.id)}
-                >
-                  {expandedCard === anime.id ? 'Cerrar' : 'Ver más'}
-                </button>
-              </div>
+                {expandedCard === anime.id ? 'Cerrar' : 'Ver más'}
+              </button>
+            </div>
             ))}
           </div>
         </div>

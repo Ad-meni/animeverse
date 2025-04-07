@@ -23,24 +23,26 @@
     background-color: #e5dcc5; /* Fondo perla */
     border-radius: 10px; /* Bordes redondeados */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición al hover */
-    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, height 0.3s ease; /* Transiciones suaves */
+    overflow: hidden; /* Evita que el contenido salga del cuadro */
     padding: 10px;
     position: relative; /* Necesario para el botón */
     width: auto; /* Ajusta el ancho automáticamente */
-    height: 300px; /* Hace los cuadros más largos */
+    height: auto; /* Permite altura dinámica basada en contenido */
   }
+  
   
   .anime-card:hover {
     transform: scale(1.05); /* Se agranda un poco */
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Sombra más prominente */
   }
   
-  
+
   .anime-card.expanded {
-    transform: scale(1.1); /* Se agranda más cuando está expandido */
-    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.3); /* Sombra más fuerte */
+    transform: scale(1.05); /* Se agranda ligeramente */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Sombra más prominente */
   }
+  
   
   .anime-image {
     width: 100%;
@@ -62,7 +64,12 @@
     margin: 10px;
     text-align: justify;
     color: #555;
+    transition: max-height 0.3s ease, opacity 0.3s ease; /* Transiciones suaves */
+    max-height: 100px; /* Altura inicial limitada */
+    overflow: hidden; /* Oculta el texto fuera del límite inicial */
+    opacity: 1; /* Totalmente visible */
   }
+  
   
   .expand-button {
     position: absolute; /* Coloca el botón dentro del cuadro */
@@ -126,3 +133,9 @@
     margin: 0; /* Elimina márgenes por defecto */
     font-family: 'Sawarabi Gothic', sans-serif; /* Fuente global */
   }
+
+  .anime-card.expanded .anime-synopsis {
+    max-height: 500px; /* Altura máxima ajustada para texto expandido */
+    opacity: 1; /* Mantiene el texto visible */
+  }
+  
